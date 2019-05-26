@@ -1,0 +1,58 @@
+<html layout:decorate="~{layout.html}" lang="en" xmlns:th="http://www.w3.org/1999/xhtml"
+      xmlns:layout="http://www.w3.org/1999/xhtml">
+
+<section layout:fragment="content">
+
+    <div class="container">
+        <table class="table table-striped" border="2">
+        <form th:action="@{/movies/search}" th:method="GET" th:object="${movie}">
+            <div class="form-group">
+
+                    <tr>
+                        <td>
+                <label>Title :</label>
+                <input class="form-control" th:field="*{title}"/></td>
+
+            <td>
+            <button type="submit" class="btn btn-primary">Search</button></td></tr>
+
+            </div>
+        </form>
+        </table>
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div th:each="movie : ${movies}"
+                 class="card" style="width: 32rem;">
+                <div class="card-body">
+                    <h5 class="card-title">
+
+                        <table class="table table-striped" border="2">
+                            <thead>
+                            <tr>
+                                <th scope="col">Title</th>
+                                <th scope="col">Year</th>
+                                <th scope="col">Type</th>
+                                <th scope="col">Poster</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><span th:text="${movie.title}"></span></td>
+                                <td><span th:text="${movie.year}"></span></td>
+                                <td><span th:text="${movie.type}"></span></td>
+                                <td><img th:src="${movie.poster}" class="rounded" width="250" height="200"
+                                         alt="Default avatar"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+</html>
