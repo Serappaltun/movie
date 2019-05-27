@@ -20,7 +20,6 @@ import java.util.concurrent.TimeUnit;
 
 @Slf4j
 @Service
-@AllArgsConstructor
 public class MovieService {
 
     @Value("${tr.com.mobven.movie.film.MovieService.omdbApiKey}")
