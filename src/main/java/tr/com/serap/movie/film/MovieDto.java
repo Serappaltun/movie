@@ -1,4 +1,4 @@
-package tr.com.mobven.movie.film;
+package tr.com.serap.movie.film;
 
 
 import lombok.Data;

@@ -1,8 +1,8 @@
-package tr.com.mobven.movie.story;
+package tr.com.serap.movie.story;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
-import tr.com.mobven.movie.entity.Story;
+import tr.com.serap.movie.entity.Story;
 
 import javax.transaction.Transactional;
 

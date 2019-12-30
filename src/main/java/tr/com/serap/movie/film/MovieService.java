@@ -1,4 +1,4 @@
-package tr.com.mobven.movie.film;
+package tr.com.serap.movie.film;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hazelcast.core.HazelcastInstance;
@@ -10,8 +10,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 import org.springframework.web.client.RestTemplate;
-import tr.com.mobven.movie.entity.Movie;
-import tr.com.mobven.movie.request.MovieSaveRequest;
+import tr.com.serap.movie.entity.Movie;
+import tr.com.serap.movie.request.MovieSaveRequest;
 
 import java.util.ArrayList;
 import java.util.Collection;

@@ -1,4 +1,4 @@
-package tr.com.mobven.movie.film;
+package tr.com.serap.movie.film;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -6,7 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import tr.com.mobven.movie.entity.Movie;
+import tr.com.serap.movie.entity.Movie;
 
 @Controller
 @RequestMapping("/movies")

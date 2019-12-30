@@ -1,14 +1,14 @@
-package tr.com.mobven.movie.rest;
+package tr.com.serap.movie.rest;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-import tr.com.mobven.movie.entity.Movie;
-import tr.com.mobven.movie.film.MovieDto;
-import tr.com.mobven.movie.film.MovieService;
-import tr.com.mobven.movie.request.MovieSaveRequest;
+import tr.com.serap.movie.entity.Movie;
+import tr.com.serap.movie.film.MovieDto;
+import tr.com.serap.movie.film.MovieService;
+import tr.com.serap.movie.request.MovieSaveRequest;
 
 import java.util.Collection;
 

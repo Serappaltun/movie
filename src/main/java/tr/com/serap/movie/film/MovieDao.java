@@ -1,9 +1,9 @@
-package tr.com.mobven.movie.film;
+package tr.com.serap.movie.film;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.elasticsearch.annotations.Query;
 import org.springframework.stereotype.Repository;
-import tr.com.mobven.movie.common.AbstractDao;
+import tr.com.serap.movie.common.AbstractDao;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

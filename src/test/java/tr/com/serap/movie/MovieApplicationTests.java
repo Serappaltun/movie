@@ -1,4 +1,4 @@
-package tr.com.mobven.movie;
+package tr.com.serap.movie;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,4 +1,4 @@
-package tr.com.mobven.movie.rest;
+package tr.com.serap.movie.rest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -6,9 +6,8 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import tr.com.mobven.movie.entity.Movie;
-import tr.com.mobven.movie.entity.Story;
-import tr.com.mobven.movie.story.StoryService;
+import tr.com.serap.movie.entity.Story;
+import tr.com.serap.movie.story.StoryService;
 
 import java.util.List;
 

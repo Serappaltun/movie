@@ -1,9 +1,9 @@
-package tr.com.mobven.movie.story;
+package tr.com.serap.movie.story;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import tr.com.mobven.movie.entity.Story;
+import tr.com.serap.movie.entity.Story;
 
 import java.util.ArrayList;
 import java.util.List;

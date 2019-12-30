@@ -1,4 +1,4 @@
-package tr.com.mobven.movie.entity;
+package tr.com.serap.movie.entity;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;

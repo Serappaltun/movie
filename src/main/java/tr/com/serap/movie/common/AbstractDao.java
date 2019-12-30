@@ -1,4 +1,4 @@
-package tr.com.mobven.movie.common;
+package tr.com.serap.movie.common;
 
 import lombok.AllArgsConstructor;
 import org.springframework.data.jpa.repository.Query;

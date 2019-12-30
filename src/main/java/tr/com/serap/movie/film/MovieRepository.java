@@ -1,11 +1,11 @@
-package tr.com.mobven.movie.film;
+package tr.com.serap.movie.film;
 
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
-import tr.com.mobven.movie.entity.Movie;
+import tr.com.serap.movie.entity.Movie;
 
 import javax.transaction.Transactional;
 import java.util.Collection;
