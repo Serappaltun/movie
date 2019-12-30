@@ -1,4 +1,4 @@
-package tr.com.mobven.movie.film;
+package tr.com.mobven.movie.entity;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
@@ -33,4 +33,11 @@ public class Movie implements Serializable {
     @JsonProperty("Poster")
     private String poster;
 
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getTitle() {
+        return title;
+    }
 }

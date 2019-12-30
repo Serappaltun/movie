@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+import tr.com.mobven.movie.entity.Movie;
 
 import java.io.Serializable;
 import java.util.List;

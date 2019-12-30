@@ -1,4 +1,4 @@
-package tr.com.mobven.movie.Configuration;
+package tr.com.mobven.movie.configuration;
 
 import com.hazelcast.config.Config;
 import com.hazelcast.config.EvictionPolicy;

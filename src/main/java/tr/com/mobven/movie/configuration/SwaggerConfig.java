@@ -1,4 +1,4 @@
-package tr.com.mobven.movie.Configuration;
+package tr.com.mobven.movie.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

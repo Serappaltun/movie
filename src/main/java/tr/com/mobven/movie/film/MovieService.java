@@ -3,7 +3,6 @@ package tr.com.mobven.movie.film;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hazelcast.core.HazelcastInstance;
 import com.hazelcast.core.IMap;
-import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -11,6 +10,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 import org.springframework.web.client.RestTemplate;
+import tr.com.mobven.movie.entity.Movie;
+import tr.com.mobven.movie.request.MovieSaveRequest;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -38,9 +39,12 @@ public class MovieService {
     private MovieRepository movieRepository;
 
     @Autowired
+    private MovieDao movieDao;
+
+    @Autowired
     private HazelcastInstance hazelcastInstance;
 
-    Iterable<Movie> findAll() {
+    public Iterable<Movie> findAll() {
         return movieRepository.findAll();
     }
 
@@ -92,5 +96,29 @@ public class MovieService {
             e.printStackTrace();
         }
         return new ArrayList<>();
+    }
+
+    public void deleteMovie(String imdbID) {
+        movieRepository.deleteMovieByImdbId(imdbID);
+
+    }
+
+    public Collection<MovieDto> findMovieByMovieType(String type) {
+        final Collection<MovieDto> movieDto = movieDao.findMovieByMovieType(type);
+        log.info("get from db. type:" + type + "| count:" + movieDto.size());
+
+        return movieDto;
+
+    }
+
+    public Movie saveMovie(MovieSaveRequest request) {
+        Movie movie = new Movie();
+        movie.setImdbId(request.getImdbID());
+        movie.setTitle(request.getTitle());
+        movie.setYear(request.getYear());
+        movie.setType(request.getType());
+        movie.setPoster(request.getPoster());
+
+        return movieRepository.save(movie);
     }
 }
