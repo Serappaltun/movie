@@ -1,9 +1,7 @@
 package tr.com.serap.movie.entity;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -12,7 +10,9 @@ import java.io.Serializable;
 
 @Data
 @Entity
+@Builder
 @ToString
+@AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "Story")
 public class Story implements Serializable {

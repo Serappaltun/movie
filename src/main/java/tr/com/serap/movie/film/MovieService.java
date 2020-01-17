@@ -23,13 +23,13 @@ import java.util.concurrent.TimeUnit;
 @Service
 public class MovieService {
 
-    @Value("${tr.com.mobven.movie.film.MovieService.omdbApiKey}")
+    @Value("${tr.com.serap.movie.film.MovieService.omdbApiKey}")
     String API_KEY;
 
-    @Value("${tr.com.mobven.movie.film.MovieService.hazelcastMap}")
+    @Value("${tr.com.serap.movie.film.MovieService.hazelcastMap}")
     String HAZELCAST_MAP;
 
-    @Value("${tr.com.mobven.movie.film.MovieService.cacheTimeInMinutes}")
+    @Value("${tr.com.serap.movie.film.MovieService.cacheTimeInMinutes}")
     long CACHE_TIME;
 
     @Autowired
