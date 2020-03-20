@@ -27,7 +27,7 @@ public class StoryController {
 
     }
 
-    @GetMapping("/find-stories-name")
+    @GetMapping("/stories-name")
     ResponseEntity<List<String>> getStoriesName() {
 
         final List<String> stories = storyService.getStoriesName();
